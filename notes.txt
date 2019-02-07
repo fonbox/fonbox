@@ -1,0 +1,9 @@
+known bugs / incompatabilities
+* cannot navigator.getUserMedia on Google app on iPhone (but works via Safari)
+
+
+TODO:
+* check user's browser and device before continue
+* only allow good_browsers and good_devices
+* see browser compatability https://developer.mozilla.org/en-US/docs/Web/API/MediaStream
+* good_devices only include mobile devices, no laptops allowed... or maybe... hmmmm.... is FonBox a fun box if a laptop is inside?
