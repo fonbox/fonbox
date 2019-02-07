@@ -13,17 +13,35 @@
   </body>
   <footer>
     <script>
-      var constraints = { audio: true, video: true };
-      navigator.mediaDevices.getUserMedia(constraints)
-      .then(function (stream) {
-        /* use the stream */
-        console.log(stream);
-      })
-      .catch(function (err) {
-        /* handle the error */
-        console.log(err);
+      function getMedia() {
+        // Lockout older browsers without mediaDevices implementation
+        if (navigator.mediaDevices === undefined) {
+          Error('getUserMedia is not implemented in this browser');
+          return false;
+        }
 
-      });
+        navigator.mediaDevices.getUserMedia({ audio: true, video: true })
+        .then(function (stream) {
+          var video = document.querySelector('video');
+
+          // Older browsers may not have srcObject
+          if ('srcObject' in video) {
+            video.srcObject = stream;
+          } else {
+            // Avoid using this in new browsers, as it is going away.
+            video.src = window.URL.createObjectURL(stream);
+          }
+
+          video.onloadedmetadata = function (e) {
+            video.play();
+          };
+        })
+        .catch(function (err) {
+          console.log(err.name + ': ' + err.message);
+        });
+      }
+
+      getMedia();
     </script>
   </footer>
 </html>
