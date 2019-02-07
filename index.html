@@ -11,4 +11,19 @@
        <img src="https://raw.githubusercontent.com/mfekadu/coursera-test/master/site/img/very_nice.gif" alt="very nice gif borat">
     </div>
   </body>
+  <footer>
+    <script>
+      var constraints = { audio: true, video: true };
+      navigator.mediaDevices.getUserMedia(constraints)
+      .then(function (stream) {
+        /* use the stream */
+        console.log(stream);
+      })
+      .catch(function (err) {
+        /* handle the error */
+        console.log(err);
+
+      });
+    </script>
+  </footer>
 </html>
