@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>FonBox</title>
     <style>
-      body {
+      html {
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         margin-left: 25%;
         margin-right: 25%;
@@ -53,6 +54,19 @@
         -moz-transform:rotateY(180deg); /* Firefox */
       }
 
+      a {
+        color: #6fa8dc;
+        font-weight: 300;
+        text-decoration: none;
+      }
+
+      a#viewSource {
+        display: block;
+        margin: 1.3em 0 0 0;
+        border-top: 1px solid #999;
+        padding: 1em 0 0 0;
+      }
+
     </style>
   </head>
   <body>
@@ -65,6 +79,9 @@
     <button class="primary_btn" id="showVideo">Open camera</button>
     <div id="errorMsg"></div>
     <video id="gum-local" autoplay playsinline></video>
+    <div>
+        <a href="https://github.com/fonbox/fonbox" id="viewSource">View source code on GitHub</a>
+    </div>
   </body>
   <footer>
     <script>
@@ -125,5 +142,6 @@
     document.querySelector('#showVideo').addEventListener('click', e => init(e));
 
     </script>
+
   </footer>
 </html>
