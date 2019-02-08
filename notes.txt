@@ -1,5 +1,7 @@
 known bugs / incompatabilities
 * cannot navigator.getUserMedia on Google app on iPhone (but works via Safari)
+* Chrome for iOS doesnt work with the adapter.js shim even though my friend's Andorid browser works... "getUserMedia error: TypeError"
+
 
 
 TODO:
