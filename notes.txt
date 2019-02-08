@@ -7,6 +7,8 @@ TODO:
 * only allow good_browsers and good_devices
 * see browser compatability https://developer.mozilla.org/en-US/docs/Web/API/MediaStream
 * good_devices only include mobile devices, no laptops allowed... or maybe... hmmmm.... is FonBox a fun box if a laptop is inside?
+* consider using this QR code scanner to verify box is closed
+** https://github.com/schmich/instascan
 
 
 * consider making this a React App via: 
