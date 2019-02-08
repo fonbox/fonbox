@@ -7,8 +7,8 @@
       html {
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-top: 10%;
       }
 
@@ -47,7 +47,17 @@
         opacity: 0.8;
       }
 
+      div#video_container {
+        margin: auto;
+        width: 60%;
+        /* height: ; */
+        border: 10px #333 solid;
+        align-content: center;
+      }
+
       video {
+        width: 100%;
+        /* height: 100%; */
         /* mirror the video */
         transform: rotateY(180deg);
         -webkit-transform:rotateY(180deg); /* Safari and Chrome */
@@ -63,6 +73,7 @@
       a#viewSource {
         display: block;
         margin: 1.3em 0 0 0;
+        margin-bottom: 2em;
         border-top: 1px solid #999;
         padding: 1em 0 0 0;
       }
@@ -79,7 +90,9 @@
     </div>
     <button class="primary_btn" id="showVideo">Open camera</button>
     <div id="errorMsg"></div>
-    <video id="gum-local" autoplay playsinline></video>
+    <div id="video_container">
+      <video autoplay playsinline poster="600px-Happy_smiley_face.png"></video>
+    </div>
     <div>
         <a href="https://github.com/fonbox/fonbox" id="viewSource">View source code on GitHub</a>
     </div>
