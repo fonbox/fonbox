@@ -12,3 +12,30 @@ TODO:
 * consider making this a React App via: 
 ** https://itnext.io/so-you-want-to-host-your-single-age-react-app-on-github-pages-a826ab01e48
 ** but frankly POJO should be good enough to begin with
+
+## Not all browsers support WebRTC
+* this did not work
+** https://github.com/mozdevs/mediaDevices-getUserMedia-polyfill
+* because incompatabilities
+** http://iswebrtcreadyyet.com/
+* there exists a "shim" that works
+** https://github.com/webrtc/adapter
+* with latest release here
+** https://webrtchacks.github.io/adapter/adapter-latest.js
+* and samples repo
+** https://github.com/webrtc/samples
+* and samples demo
+** https://webrtc.github.io/samples/
+
+
+
+## errors and solutions
+
+### Error while attempting to access camera from <filename>.html directly as local file
+* "Trying to call getUserMedia from an insecure document.
+errorMsg — main.js:41"
+* "NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission. — main.js:47"
+
+### Solution to that
+* https://stackoverflow.com/q/37900572/5411712
+* use command [`browser-sync`](https://www.browsersync.io/) to get a `localhost` server up and running and then the camera should work just fine. This happens on Safari for security reasons. I dont know why Chrome is okay with the direct camera access from <filename>.html but it is....
