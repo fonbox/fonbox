@@ -40,7 +40,7 @@ Upon interacting with a cardboard box, a QR code will invite a user to participa
 The "funbox" username on GitHub is already taken... [that's just the way it is 🎵][the_way_it_is]
 
 ## Will the box use Artificial Intelligence (AI)?
-Yes, some simple AI to detect the phone being inside a closed box ( [see issue #6][i6] ). Also, there may be some simple obejct/face detection for a different user flow. 
+Yes, some simple logic to detect the phone being inside a closed box ( [see issue #6][i6] ). Also, there may be some simple obejct/face detection for a different user flow. 
 
 ## What are the lessons from this experiment?
 [Check out these issues][lessons_learned] that go into detail about the problems I encountered while UX testing the box with friends. 
