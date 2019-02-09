@@ -21,6 +21,15 @@ Upon interacting with a cardboard box, a QR code will invite a user to participa
 The "funbox" username on GitHub is already taken... [that's just the way it is 🎵][the_way_it_is]
 
 
+## What are the lessons from this experiment?
+[Check out these issues][lessons_learned] that go into detail about the problems I encountered while UX testing the box with friends. 
 
-[the_way_it_is]: https://youtu.be/cOeKidp-iWo?t=67
+
+
+<!--- link tags --->
+
 [class_spreadsheet]: https://docs.google.com/spreadsheets/d/1Eyplhlz9zeHBEaIwRIYHkUTHgKzgI83JgV6KKFnPwtY/edit#gid=0
+
+[the_way_it_is]: https://youtu.be/cOeKidp-iWo?t=6
+
+[lessons_learned]: https://github.com/fonbox/fonbox/issues?utf8=%E2%9C%93&q=
