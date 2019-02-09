@@ -9,8 +9,24 @@ put your phone in the box and have fun
 > 2) Give Box an AFFORDANCE, which is a clear invitation to participate. Box may also have additional affordances to keep the user participating (i.e. to make it sticky). Don't forget about emotional aspects as well.
 > 3) Make your AFFORDANCE 'sticky' so that people want to use your box as long as possible.
 
-## How does (will) it work?
+## How does/will it work?
 Upon interacting with a cardboard box, a QR code will invite a user to participate by scanning the code. Then the user will be able to access a web interface. The web interface will instruct the user to put the phone in the box. Finally, the phone will serve as a brain in the box using its input and output accessories to interact with the user. 
+
+**What is/are the "invitation(s) to participate?"**
+* The "pull to unlock" signifier
+* The QR Code
+
+**What makes it "sticky?"**
+* FonBox will interact by voice, instructing the user to play/dance/talk/meditate/etc
+  * hmm... it would be interesting to test FonBox as a _jukebox_ vs _meditation box_ vs _game box_
+  * or is FonBox fun by having different modes (activated by voice command)
+* FonBox can reward the user by saying "good job" or "that was fun!"
+* FonBox is infinitely updatable, simply by pushing new code to GitHub. Users can anticipate new modes the next time they interact with FonBox.
+
+**What makes it "viral?"**
+* The final payoff might be a sharable selfie with the FonBox website.
+* User's might be more likely to share their "high score" in a game mode or "length of meditation" (although I would personally have a moral/ethical dilemma with allowing that if the intention is to truly help people increase mindfulness). 
+
 
 ## Is there a box in real life?
 > **Here is an image of version 1 of the FonBox**
