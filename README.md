@@ -22,5 +22,5 @@ The "funbox" username on GitHub is already taken... [that's just the way it is ð
 
 
 
-[the_way_it_is]: https://www.youtube.com/watch?v=cOeKidp-iWo
+[the_way_it_is]: https://youtu.be/cOeKidp-iWo?t=67
 [class_spreadsheet]: https://docs.google.com/spreadsheets/d/1Eyplhlz9zeHBEaIwRIYHkUTHgKzgI83JgV6KKFnPwtY/edit#gid=0
