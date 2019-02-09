@@ -32,4 +32,4 @@ The "funbox" username on GitHub is already taken... [that's just the way it is ð
 
 [the_way_it_is]: https://youtu.be/cOeKidp-iWo?t=6
 
-[lessons_learned]: https://github.com/fonbox/fonbox/issues?utf8=%E2%9C%93&q=
+[lessons_learned]: https://github.com/fonbox/fonbox/issues?q=is%3Aopen+is%3Aissue+label%3Alessons_learned
