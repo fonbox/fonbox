@@ -16,6 +16,9 @@ Upon interacting with a cardboard box, a QR code will invite a user to participa
 * The "pull to unlock" signifier
 * The QR Code
 
+**What are the "emotional aspects?"**
+* hmmm... idk
+
 **What makes it "sticky?"**
 * FonBox will interact by voice, instructing the user to play/dance/talk/meditate/etc
   * hmm... it would be interesting to test FonBox as a _jukebox_ vs _meditation box_ vs _game box_
