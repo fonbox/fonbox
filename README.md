@@ -4,7 +4,7 @@ put your phone in the box and have fun
 ## Why is this a thing?
 [Class project][class_spreadsheet] for Professor Fred Abler's CSC 484 (User-Centered Interface Design and Development)
 
-### Basic Instructions
+> **Basic Instructions**
 > 1) Make a 12"x12"x12" cardboard box, or can be other materials.
 > 2) Give Box an AFFORDANCE, which is a clear invitation to participate. Box may also have additional affordances to keep the user participating (i.e. to make it sticky). Don't forget about emotional aspects as well.
 > 3) Make your AFFORDANCE 'sticky' so that people want to use your box as long as possible.
