@@ -2,7 +2,7 @@
 put your phone in the box and have fun
 
 ### Why is this a thing?
-Class project for Professor Fred Abler's CSC 484 (User-Centered Interface Design and Development)
+[Class project][class_spreadsheet] for Professor Fred Abler's CSC 484 (User-Centered Interface Design and Development)
 
 #### Basic Instructions
 > 1) Make a 12"x12"x12" cardboard box, or can be other materials.
@@ -23,3 +23,4 @@ The "funbox" username on GitHub is already taken... [that's just the way it is ð
 
 
 [the_way_it_is]: https://www.youtube.com/watch?v=cOeKidp-iWo
+[class_spreadsheet]: https://docs.google.com/spreadsheets/d/1Eyplhlz9zeHBEaIwRIYHkUTHgKzgI83JgV6KKFnPwtY/edit#gid=0
