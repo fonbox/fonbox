@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://fonbox.github.io/fonbox",
   "dependencies": {
+    "instascan": "^1.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.3"
