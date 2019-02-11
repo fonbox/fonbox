@@ -32,8 +32,15 @@ Upon interacting with a cardboard box, a QR code will invite a user to participa
 
 
 ## Is there a box in real life?
-> **Here is an image of version 1 of the FonBox**
-<img src="https://raw.githubusercontent.com/fonbox/fonbox/master/fonbox_the_box_v1.jpg" alt="a pixture of the real life FonBox" width="500px" height="500px">
+> **Here are images of version 1 of the FonBox**
+<div>
+<span> 
+<img src="https://raw.githubusercontent.com/fonbox/fonbox/master/pictures/fonbox_the_box_v1.jpg" alt="a pixture of the real life FonBox" width="300px" height="300px">
+</span>
+<span>
+<img src="https://raw.githubusercontent.com/fonbox/fonbox/master/pictures/fonbox_the_box_inside_v1.jpg" alt="a pixture of the real life FonBox" width="300px" height="300px">
+</span>
+</div>
 
 
 ## Why is the name weird?
