@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/fonbox/precache-manifest.d6d607e19c4627a0a60bb24a94d69825.js"
+  "/fonbox/precache-manifest.231b8b45766453b4b3e6a3d489d31a3a.js"
 );
 
 workbox.clientsClaim();

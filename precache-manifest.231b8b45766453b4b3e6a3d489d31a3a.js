@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "84ea04dd41909c7a5e18",
-    "url": "/fonbox/static/css/main.a7520658.chunk.css"
+    "revision": "6e7edb1e977cf2c42b83",
+    "url": "/fonbox/static/css/main.9a854d5f.chunk.css"
   },
   {
-    "revision": "84ea04dd41909c7a5e18",
-    "url": "/fonbox/static/js/main.84ea04dd.chunk.js"
+    "revision": "6e7edb1e977cf2c42b83",
+    "url": "/fonbox/static/js/main.6e7edb1e.chunk.js"
   },
   {
     "revision": "a852b0ebc3c774f96352",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/fonbox/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "882a025c129f1cda126eab0ae56da105",
+    "revision": "a5848fede7038310b41984ee7c49b192",
     "url": "/fonbox/index.html"
   }
 ];

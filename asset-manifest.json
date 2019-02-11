@@ -1,14 +1,14 @@
 {
-  "main.css": "/fonbox/static/css/main.a7520658.chunk.css",
-  "main.js": "/fonbox/static/js/main.84ea04dd.chunk.js",
-  "main.js.map": "/fonbox/static/js/main.84ea04dd.chunk.js.map",
+  "main.css": "/fonbox/static/css/main.9a854d5f.chunk.css",
+  "main.js": "/fonbox/static/js/main.6e7edb1e.chunk.js",
+  "main.js.map": "/fonbox/static/js/main.6e7edb1e.chunk.js.map",
   "static/js/1.a852b0eb.chunk.js": "/fonbox/static/js/1.a852b0eb.chunk.js",
   "static/js/1.a852b0eb.chunk.js.map": "/fonbox/static/js/1.a852b0eb.chunk.js.map",
   "runtime~main.js": "/fonbox/static/js/runtime~main.366ebb4d.js",
   "runtime~main.js.map": "/fonbox/static/js/runtime~main.366ebb4d.js.map",
   "static/media/logo.svg": "/fonbox/static/media/logo.5d5d9eef.svg",
-  "static/css/main.a7520658.chunk.css.map": "/fonbox/static/css/main.a7520658.chunk.css.map",
+  "static/css/main.9a854d5f.chunk.css.map": "/fonbox/static/css/main.9a854d5f.chunk.css.map",
   "index.html": "/fonbox/index.html",
-  "precache-manifest.d6d607e19c4627a0a60bb24a94d69825.js": "/fonbox/precache-manifest.d6d607e19c4627a0a60bb24a94d69825.js",
+  "precache-manifest.231b8b45766453b4b3e6a3d489d31a3a.js": "/fonbox/precache-manifest.231b8b45766453b4b3e6a3d489d31a3a.js",
   "service-worker.js": "/fonbox/service-worker.js"
 }
