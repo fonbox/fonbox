@@ -28,17 +28,17 @@ Upon interacting with a cardboard box, a QR code will invite a user to participa
 
 **What makes it "viral?"**
 * The final payoff might be a sharable selfie with the FonBox website.
-* User's might be more likely to share their "high score" in a game mode or "length of meditation" (although I would personally have a moral/ethical dilemma with allowing that if the intention is to truly help people increase mindfulness). 
+* User's might be more likely to share their "high score" in a game mode or "length of meditation" (although there may be a/an moral/ethical dilemma with allowing that if the intention is to truly help people increase mindfulness). 
 
 
 ## Is there a box in real life?
-> **Here are images of version 1 of the FonBox**
+> **Here are images of version 1.1.0 of the FonBox**
 <div>
 <span> 
-<img src="https://raw.githubusercontent.com/fonbox/fonbox/master/pictures/fonbox_the_box_v1.jpg" alt="a pixture of the real life FonBox" width="300px" height="300px">
+<img src="https://raw.githubusercontent.com/fonbox/fonbox/master/pictures/v1.1.0/fonbox_the_box_v1.1.0.jpg" alt="a pixture of the real life FonBox" width="300px" height="300px">
 </span>
 <span>
-<img src="https://raw.githubusercontent.com/fonbox/fonbox/master/pictures/fonbox_the_box_inside_v1.jpg" alt="a pixture of the real life FonBox" width="300px" height="300px">
+<img src="https://raw.githubusercontent.com/fonbox/fonbox/master/pictures/v1.1.0/fonbox_the_box_inside_v1.1.0.jpg" alt="a pixture of the real life FonBox" width="300px" height="300px">
 </span>
 </div>
 
@@ -58,7 +58,7 @@ Yes, some simple logic to detect the phone being inside a closed box ( [see issu
 
 [class_spreadsheet]: https://docs.google.com/spreadsheets/d/1Eyplhlz9zeHBEaIwRIYHkUTHgKzgI83JgV6KKFnPwtY/edit#gid=0
 
-[the_way_it_is]: https://youtu.be/cOeKidp-iWo?t=6
+[the_way_it_is]: https://youtu.be/eXvBjCO19QY?t=232
 
 [lessons_learned]: https://github.com/fonbox/fonbox/issues?q=is%3Aopen+is%3Aissue+label%3Alessons_learned
 
