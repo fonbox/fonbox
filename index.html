@@ -23,26 +23,36 @@
     </div>
   </body>
   <footer>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
       // create new scanner and listen to the video element
-      let scanner = new Instascan.Scanner({ video: document.getElementById('frontCam') });
+      let scanner = new Instascan.Scanner({
+        video: document.getElementById('frontCam'),
+        refractoryPeriod: 1000, // scan every 1 second
+      });
       scanner.addListener('scan', function (data, image) {
         console.log(data);
       });
 
-      Instascan.Camera.getCameras().then(function (cameras) {
-        // if (cameras.length > 0) {
-        //   console.log('cameras');
-          scanner.start(cameras[0]);
-        // } else {
-        //   console.error('No cameras found.');
-        // }
-      }).catch(function (e) {
-        console.log('error'); // console.error(e);
-      }) ;
-    </script> -->
+      function openCamera(e) {
+        Instascan.Camera.getCameras().then(function (cameras) {
+          if (cameras.length > 0) {
+            console.log('cameras');
+            scanner.start(cameras[0]);
+          } else {
+            console.error('No cameras found.');
+          }
+        }).catch(function (e) {
+          console.log('error'); // console.error(e);
+        });
 
-    <script>
+        e.target.disabled = true;
+        console.log(e);
+      }
+
+      document.querySelector('#showVideo').addEventListener('click', e => openCamera(e));
+    </script>
+
+    <!-- <script>
     /*
      *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
      *
@@ -51,12 +61,6 @@
      *  tree.
      */
     'use strict';
-
-    // from Instascan camera.js
-    function cameraName(label) {
-      let clean = label.replace(/\s*\([0-9a-f]+(:[0-9a-f]+)?\)\s*$/, '');
-      return clean || label || null;
-    }
 
     // Put variables in global scope to make them available to the browser console.
     const constraints = window.constraints = {
@@ -70,7 +74,6 @@
       console.log('Got stream with constraints:', constraints);
       console.log(`Using video device: ${videoTracks[0].label}`);
       window.stream = stream; // make variable available to browser console
-      window.camera = new Instascan.Camera(videoTracks[0].id, cameraName(videoTracks[0].label));
       video.srcObject = stream;
     }
 
@@ -99,12 +102,6 @@
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
         handleSuccess(stream);
         e.target.disabled = true;
-        // create new scanner and listen to the video element
-        let scanner = window.scanner = new Instascan.Scanner({ video: document.getElementById('frontCam') });
-        scanner.addListener('scan', function (data, image) {
-          console.log(data);
-        });
-        // scanner.start(camera);
       } catch (e) {
         handleError(e);
       }
@@ -112,7 +109,7 @@
 
     document.querySelector('#showVideo').addEventListener('click', e => init(e));
 
-    </script>
+    </script> -->
 
   </footer>
 </html>
