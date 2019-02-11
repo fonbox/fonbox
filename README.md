@@ -52,7 +52,9 @@ Yes, some simple logic to detect the phone being inside a closed box ( [see issu
 ## What are the lessons from this experiment?
 [Check out these issues][lessons_learned] that go into detail about the problems I encountered while UX testing the box with friends. 
 
-
+## Will the project continue past the assignment due date?
+Yes! There are so many possibilities for a user experience with a phone in a box.
+Do you have any "outside the box" ideas? [Submit a new issue][new_issue]
 
 <!--- link tags --->
 
@@ -61,6 +63,8 @@ Yes, some simple logic to detect the phone being inside a closed box ( [see issu
 [the_way_it_is]: https://youtu.be/eXvBjCO19QY?t=232
 
 [lessons_learned]: https://github.com/fonbox/fonbox/issues?utf8=%E2%9C%93&q=label%3Alessons_learned+
+
+[new_issue]: https://github.com/fonbox/fonbox/issues/new
 
 <!--- issues --->
 [i6]: /../../issues/6
