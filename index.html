@@ -16,7 +16,7 @@
     <h3> This app needs your camera and microphone access before the <em>fun times</em> begin </h3>
     <h4> For the best experience, use Safari on iPhone or Chrome on Android. </h4>
     <div class="img-div">
-       <img src="https://raw.githubusercontent.com/mfekadu/coursera-test/master/site/img/very_nice.gif" alt="very nice gif borat">
+       <img style="visibility: hidden;" id="soundGif"   src="./assets/svg-audio-icon-dribbble-chris-gannon.gif" alt="very nice gif borat">
     </div>
     <button class="primary_btn" id="showVideo">Open camera</button>
     <div id="errorMsg"></div>
@@ -34,6 +34,8 @@
         refractoryPeriod: 1000, // scan every 1 second
       });
 
+      var audio = new Audio('./assets/jeopardy.mp3');
+
       var startTime = 0;
       var endTime = 0;
 
@@ -44,7 +46,13 @@
         if (startTime > 0) {
           var count = (endTime - startTime) / 1000;
           countParagraph.innerHTML = `Your phone was in the box for ${count} seconds`;
+          if (audio.currentTime == 0) {
+            audio.play();
+          } else {
+            console.log(audio.currentTime);
+          }
         } else {
+          audio.pause();
           countParagraph.innerHTML = "Close the box!"; 
         }
         console.log(data);
@@ -58,6 +66,8 @@
             startTime = new Date().getTime();
             var countParagraph = document.getElementById('counter');
             countParagraph.innerHTML = "Close the box!"; 
+            var soundGif = document.getElementById('soundGif');
+            soundGif.style.visibility = "visible";
           } else {
             console.error('No cameras found.');
           }
