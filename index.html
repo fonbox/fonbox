@@ -3,71 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>FonBox</title>
-    <style>
-      html {
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 10%;
-      }
-
-      h1 {
-        font-size: 3em;
-      }
-
-      h2 {
-        font-size: 2em;
-      }
-
-      h3 {
-        font-size: 1.5em;
-      }
-
-      .img-div {
-        margin: 20px;
-      }
-
-      img {
-        width: 200px;
-      }
-
-      .primary_btn {
-        background-color: #28a745;
-        border: none;
-        border-radius: 20px; /* very rounded */
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2.0em;
-        margin: 0 0 1em 0;
-        padding: 0.5em 0.7em 0.6em 0.7em;
-      }
-
-      button:hover {
-        opacity: 0.8;
-      }
-
-      video {
-        /* mirror the video */
-        transform: rotateY(180deg);
-        -webkit-transform:rotateY(180deg); /* Safari and Chrome */
-        -moz-transform:rotateY(180deg); /* Firefox */
-      }
-
-      a {
-        color: #6fa8dc;
-        font-weight: 300;
-        text-decoration: none;
-      }
-
-      a#viewSource {
-        display: block;
-        margin: 1.3em 0 0 0;
-        border-top: 1px solid #999;
-        padding: 1em 0 0 0;
-      }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- instascan will scan QR codes -->
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
   </head>
   <body>
     <h1> Hello, welcome to FonBox! </h1>
@@ -79,12 +17,31 @@
     </div>
     <button class="primary_btn" id="showVideo">Open camera</button>
     <div id="errorMsg"></div>
-    <video autoplay playsinline></video>
+    <video id="frontCam" autoplay playsinline></video>
     <div>
         <a href="https://github.com/fonbox/fonbox" id="viewSource">View source code on GitHub</a>
     </div>
   </body>
   <footer>
+    <!-- <script type="text/javascript">
+      // create new scanner and listen to the video element
+      let scanner = new Instascan.Scanner({ video: document.getElementById('frontCam') });
+      scanner.addListener('scan', function (data, image) {
+        console.log(data);
+      });
+
+      Instascan.Camera.getCameras().then(function (cameras) {
+        // if (cameras.length > 0) {
+        //   console.log('cameras');
+          scanner.start(cameras[0]);
+        // } else {
+        //   console.error('No cameras found.');
+        // }
+      }).catch(function (e) {
+        console.log('error'); // console.error(e);
+      }) ;
+    </script> -->
+
     <script>
     /*
      *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
@@ -94,6 +51,12 @@
      *  tree.
      */
     'use strict';
+
+    // from Instascan camera.js
+    function cameraName(label) {
+      let clean = label.replace(/\s*\([0-9a-f]+(:[0-9a-f]+)?\)\s*$/, '');
+      return clean || label || null;
+    }
 
     // Put variables in global scope to make them available to the browser console.
     const constraints = window.constraints = {
@@ -107,6 +70,7 @@
       console.log('Got stream with constraints:', constraints);
       console.log(`Using video device: ${videoTracks[0].label}`);
       window.stream = stream; // make variable available to browser console
+      window.camera = new Instascan.Camera(videoTracks[0].id, cameraName(videoTracks[0].label));
       video.srcObject = stream;
     }
 
@@ -135,6 +99,12 @@
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
         handleSuccess(stream);
         e.target.disabled = true;
+        // create new scanner and listen to the video element
+        let scanner = window.scanner = new Instascan.Scanner({ video: document.getElementById('frontCam') });
+        scanner.addListener('scan', function (data, image) {
+          console.log(data);
+        });
+        // scanner.start(camera);
       } catch (e) {
         handleError(e);
       }
