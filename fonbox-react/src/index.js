@@ -2,7 +2,6 @@ import React from 'react'; // needed to parse & interpret JSX
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App'; // import 'App' HTML component
-import FonBox from './components/FonBox';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));

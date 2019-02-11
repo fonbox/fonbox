@@ -12,3 +12,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+.img-div {
+  margin: 20px;
+}
+
+img {
+  width: 200px;
+}
+
+.primary_btn {
+  background-color: #28a745;
+  border: none;
+  border-radius: 20px; /* very rounded */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.0em;
+  margin: 0 0 1em 0;
+  padding: 0.5em 0.7em 0.6em 0.7em;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+video {
+  /* mirror the video */
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+a {
+  color: #6fa8dc;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a#viewSource {
+  display: block;
+  margin: 1.3em 0 0 0;
+  border-top: 1px solid #999;
+  padding: 1em 0 0 0;
+}
