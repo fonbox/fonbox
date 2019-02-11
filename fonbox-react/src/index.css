@@ -72,7 +72,7 @@ a {
 
 a#viewSource {
   display: block;
-  margin: 1.3em 0 0 0;
+  margin-bottom: 20%;
   border-top: 1px solid #999;
   padding: 1em 0 0 0;
 }
