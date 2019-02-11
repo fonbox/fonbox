@@ -20,6 +20,7 @@
     </div>
     <button class="primary_btn" id="showVideo">Open camera</button>
     <div id="errorMsg"></div>
+    <div id="countDiv"><p style="font-size:48px;" id="counter"></p></div>
     <video id="frontCam" autoplay playsinline></video>
     <div>
         <a href="https://github.com/fonbox/fonbox" id="viewSource">View source code on GitHub</a>
@@ -32,7 +33,20 @@
         video: document.getElementById('frontCam'),
         refractoryPeriod: 1000, // scan every 1 second
       });
+
+      var startTime = 0;
+      var endTime = 0;
+
       scanner.addListener('scan', function (data, image) {
+        var endTime = new Date().getTime();
+        var countParagraph = document.getElementById('counter');
+
+        if (startTime > 0) {
+          var count = (endTime - startTime) / 1000;
+          countParagraph.innerHTML = `Your phone was in the box for ${count} seconds`;
+        } else {
+          countParagraph.innerHTML = "Close the box!"; 
+        }
         console.log(data);
       });
 
@@ -41,6 +55,9 @@
           if (cameras.length > 0) {
             console.log('cameras');
             scanner.start(cameras[0]);
+            startTime = new Date().getTime();
+            var countParagraph = document.getElementById('counter');
+            countParagraph.innerHTML = "Close the box!"; 
           } else {
             console.error('No cameras found.');
           }
