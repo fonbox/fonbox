@@ -60,7 +60,7 @@ Yes, some simple logic to detect the phone being inside a closed box ( [see issu
 
 [the_way_it_is]: https://youtu.be/eXvBjCO19QY?t=232
 
-[lessons_learned]: https://github.com/fonbox/fonbox/issues?q=is%3Aopen+is%3Aissue+label%3Alessons_learned
+[lessons_learned]: https://github.com/fonbox/fonbox/issues?utf8=%E2%9C%93&q=label%3Alessons_learned+
 
 <!--- issues --->
 [i6]: /../../issues/6
